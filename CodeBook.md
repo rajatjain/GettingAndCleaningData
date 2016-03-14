@@ -45,4 +45,4 @@ Subject.ID | Activity.Label | Mean.Std.Col.1 | Mean.Std.Col.2 | ... | Mean.Std.C
    * Place the script `run_analysis.R` inside `UCI HAR Dataset`.
    * Make sure the libraries `dplyr` and `reshape2` are installed.
    * Run `source("run_analysis.R")`.
-   * This will generate a file `tidy_data.csv` contianing the final data.
+   * This will generate a file `tidy_data.txt` contianing the final data.

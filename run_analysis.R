@@ -10,7 +10,7 @@
 #    - dplyr
 #    - reshape2
 #
-# The csv file containing the tidy data is created in the folder "UCI HAR Dataset"
+# The data file containing the tidy data is created in the folder "UCI HAR Dataset"
 
 library(dplyr)
 library(reshape2)
@@ -63,5 +63,5 @@ melted_data <- melt(final_df, id=c("Subject.ID", "Activity.Label"), variable.nam
 # Now cast it
 tidy_data <- tbl_df(dcast(melted_data, Subject.ID+Activity.Label ~ Feature.Name, mean))
 
-# Write data into csv
-write.csv(tidy_data, file = "tidy_data.csv")
+# Write data into table
+write.table(tidy_data, file = "tidy_data.txt", row.names=FALSE)
